@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country</title>
+    <link rel="stylesheet" href="country.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- h1 -->
+      <div class="main-heading">
+        <h1>Where in the world?</h1>
+      </div>
+
+      <!-- Dark Mode Switch -->
+      <div class="theme-switch-wrapper">
+        <span>
+          <i id="toggle-btn" class="fas fa-sun"></i>
+        </span>
+      </div>
+    </header>
+
+    <a href="javascript:history.go(-1)">
+      <button class="back-btn" type="button">Back</button>
+    </a>
+    <!-- <button ">Back</button> -->
+
+    <!-- main container -->
+    <div class="main-container">
+      <!-- img container -->
+      <div class="img-container">
+        <img
+          class="img"
+          id="img"
+          src="https://media.istockphoto.com/id/691333546/vector/german-flag-flat-layout-vector-illustration.jpg?s=612x612&w=0&k=20&c=WA8VoZOYG2yCVuP7VldzO0h20nis9FDXnHclWdkGEFo="
+          alt=""
+        />
+      </div>
+
+      <div class="container">
+        <h1 class="country-name" id="name"></h1>
+        <div class="container_top">
+          <!-- first info div -->
+          <div class="first-info">
+            <span
+              ><strong>Native Name: </strong><span id="native-name"></span
+            ></span>
+            <span
+              ><strong>Population: </strong>
+              <span id="population"></span>
+            </span>
+            <span><strong>Region: </strong><span id="region"></span></span>
+            <span
+              ><strong>Sub Region: </strong><span id="sub-region"></span
+            ></span>
+            <span><strong>Capital: </strong><span id="capital"></span></span>
+          </div>
+
+          <!-- second info div -->
+          <div class="second-info">
+            <span
+              ><strong>Top Level Domain: </strong><span id="domain"></span
+            ></span>
+            <span><strong>Currency: </strong><span id="currency"></span></span>
+            <span><strong>Language: </strong><span id="language"></span></span>
+          </div>
+        </div>
+
+        <div class="border-info">
+          <h2 class="border_header" id="h2">Border Countries:</h2>
+          <div id="border-countries" class="border-countries"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="country.js"></script>
+  </body>
+</html>

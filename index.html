@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries-of-the-World</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.google.com/s2/favicons?domain=css-tricks.com"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- h1 -->
+      <!-- <div > -->
+      <h1 class="main-heading">Where in the world?</h1>
+      <!-- </div> -->
+
+      <!-- Dark Mode Switch -->
+      <div class="theme-switch-wrapper">
+        <span>
+          <i id="toggle-btn" class="fas fa-sun"></i>
+        </span>
+      </div>
+    </header>
+    <span class="loader" id="loader"></span>
+
+    <!-- search -->
+    <div class="search_container">
+      <form onsubmit="searchCountry(event)" class="form">
+        <!-- <i class="fa-regular fa-search"></i> -->
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search for a country..."
+        />
+        <button id="search-btn" type="submit">Search</button>
+      </form>
+
+      <!-- filter by region -->
+      <div class="filter-container">
+        <!-- <label for="cars">Filter By Region:</label> -->
+
+        <select class="filter_container" id="countries-filter">
+          <div>
+            <option class="option-container" value="All">All</option>
+            <option class="option-container" value="Africa">Africa</option>
+            <option class="option-container" value="Americas">America</option>
+            <option class="option-container" value="Asia">Asia</option>
+            <option class="option-container" value="Europe">Europe</option>
+            <option class="option-container" value="Oceania">Oceania</option>
+          </div>
+        </select>
+      </div>
+    </div>
+
+    <!-- country section -->
+    <div id="countries-container"></div>
+
+    <div class="searched-country"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
